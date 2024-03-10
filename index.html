@@ -35,16 +35,15 @@
         <script src="assets/js/script.js"></script>
     </header>
 
+
+
     <div class="homemenu">
 
         <div class="introbox">
             <div class="introemoji"> &#128040; </div>
             <div class="introtext">Hi I'm Alex. This is my personal website. </div>
         </div>
-    
-    
-
-        
+             
         <a href="blog.html" class="cvbox">
             <div class="cvemoji"> &#128218; </div>
             <div class="cvtext">Blog</div>
@@ -70,6 +69,31 @@
         </div>
 
     </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Array of image sources
+        var folderPath = "assets/media/backgrounds/";
+    
+        // Specify the range of filenames (e.g., from 1 to 10)
+        var startNumber = 1;
+        var endNumber = 2;
+    
+        // Generate the array of image sources
+        var imageSources = Array.from({ length: endNumber - startNumber + 1 }, (_, index) =>
+            folderPath + (startNumber + index) + ".png"
+        );
+    
+        // Get a random index from the array
+        var randomIndex = Math.floor(Math.random() * imageSources.length);
+    
+        // Set the background image of the body with the randomly selected image source
+        document.body.style.backgroundImage = "url('" + imageSources[randomIndex] + "')";
+    });
+    </script>
+
+
+    
 
 </body>
 </html>
