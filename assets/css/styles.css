@@ -22,6 +22,14 @@ a{
     text-decoration: none;
 }
 
+.homemenu{
+    background-color: white;;
+    width: 50vw;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar{
     min-height: 70px;
     display: flex;
@@ -66,7 +74,7 @@ a{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #BEEF9E;
+    background-color: white;
 }
 
 @media(max-width:768px){
@@ -89,7 +97,7 @@ a{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: black;
+        background-color: #6767E1;
         width: 100%;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
@@ -109,8 +117,8 @@ a{
 
 .introbox{
     margin-top: 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 8px;
     width: 90%;
     margin: auto;
@@ -119,6 +127,7 @@ a{
     resize: none;
     display:flex;
     transition: 0.2s;
+    margin-bottom: 10px
 }
 
 .introbox:hover{
@@ -146,7 +155,7 @@ a{
     background-color: black;
     color: black;
     border-radius: 8px;
-    width: 600px;
+    width: 60%;
     margin: auto;
     margin-top: 20px;
     padding: 20px;
@@ -159,7 +168,7 @@ a{
 .cvbox:hover{
     transition: 0.2s;
     transform:  scale(105%) rotate(-0.3deg); 
-    background-color: darkgrey;
+    background-color: rgb(31, 31, 31);
 }
 
 .cvemoji{
@@ -174,13 +183,6 @@ a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-}
-
-.cvlink:hover{
-    background-color: black;
-    border-radius: 4px;
-    outline: 2px solid black;
-    cursor: pointer;
 }
 
 .cvpdf{
