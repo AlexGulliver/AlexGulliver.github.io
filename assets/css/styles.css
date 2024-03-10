@@ -164,6 +164,7 @@ a{
     font-family: tahoma;
     display: flex;
     transition: 0.2s;
+    margin-bottom: 10px;
 }
 
 .cvbox:hover{
