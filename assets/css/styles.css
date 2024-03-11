@@ -19,7 +19,7 @@ li {
 }
 
 body{
-    overflow: hidden;
+    font-family: "Roboto Slab";
 }
 
 a{
@@ -28,10 +28,17 @@ a{
 }
 
 .homemenu{
-    background-color: white;
-    width: 50vw;
-    height: 1000px;
     display: flex;
+    flex-direction: column;
+    margin-top: 27.5%;
+}
+
+.homemenubox{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 40vw;
+    height: 100vw;
+    display: flex;
+    margin: auto;
     flex-direction: column;
     z-index: 1;
     position: relative;
@@ -54,7 +61,7 @@ a{
 
 .nav-branding{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Slab";
     transition: 0.2s;
 }
 
@@ -72,7 +79,7 @@ a{
 }
 
 .nav-item{
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: "Roboto Slab"; 
 }
 
 .hamburger{
@@ -113,7 +120,7 @@ a{
         background-color: #6767E1;
         width: 100%;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Roboto Slab";
         transition: 0.3s;
     }
 
@@ -128,76 +135,52 @@ a{
 
 /* HOME PAGE */
 
-.introbox{
-    margin-top: 20px;
-    background-color: white;
+.menutext{
+    background-color: transparent;
     color: black;
-    border-radius: 8px;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    resize: none;
-    display:flex;
-    transition: 0.2s;
-    margin-bottom: 10px;
-    z-index: inherit;
-}
-
-.introbox:hover{
-    transition: 0.2s;
-    transform:  scale(105%) rotate(-0.15deg); 
-}
-
-.introemoji{
-    text-decoration: none;
-    font-size: 40px;  
-}
-
-.introtext{
-    font-family: Arial, Helvetica, sans-serif; 
-    float: left;
-    margin: auto;
-    font-size: 30px;
-}
-
-.intropicture{
-    display: none;
-}
-
-.cvbox{
-    background-color: black;
-    color: black;
-    border-radius: 8px;
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: center;
-    font-family: tahoma;
+    margin: 0px auto;
+    font-size: 100px;
+    font-family: "Roboto Slab";
     display: flex;
-    transition: 0.2s;
-    margin-bottom: 10px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    line-height: 0.78;
 }
 
+.menutext::before {
+    content: '';
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: 0;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.421);
+    transition: width 0.5s ease;
+}
+
+.menutext:hover::before {
+    width: 100%;
+}
+
+/*
 .cvbox:hover{
     transition: 0.2s;
     transform:  scale(105%) rotate(-0.3deg); 
     background-color: rgb(26, 152, 215);
 }
-
+*/
 .cvemoji{
     text-decoration: none;
     font-size: 40px;
 }
 
+
 .cvtext{
-    text-decoration: underline;
-    margin: auto;
-    font-size: 30px;
+    font-size: 400%;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    font-family: "Roboto Slab";
+    color: black;
 }
 
 .cvpdf{

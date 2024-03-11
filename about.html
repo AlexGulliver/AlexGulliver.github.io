@@ -12,33 +12,15 @@
 <body>
     <div class="homemenubox">
         <div class="homemenu">
-            <a class="menutext" href="about.html">ABOUT</a>
-            <a class="menutext" href="blog.html">BLOG</a>
-            <a class="menutext" href="photos.html">PHOTOS</a>
-            <a class="menutext" href="cv.html">CV</a>
-            <a id="randomPlaylist" class="menutext" onclick="generateRandomPlaylist()">PLAYLIST</a>
-            <a class="menutext" href="mailto:alex.gulliver6@gmail.com?subject=I'm%20such%20a%20big%20fan!">CONTACT</a>
+            Hi, my name is Alex. Welcome to my personal website. 
+            
+            I am currently on a placement year at Frazer-Nash in Bristol. I am studying towards a BSc Computer Science at the university of Exeter.
         </div>        
         <div class="socialmediaiconbox">
         </div>
 
     </div>
-    <script src="assets/js/script.js"></script>
-    <script>
-        var links = [
-            "https://open.spotify.com/playlist/4TuLTIP9ucfoypJs5xdJzp?si=8831ba3255624dfa", // 100
-            "https://open.spotify.com/playlist/0RkqJ5D9TNZblbMjwR7X6U?si=c861f95ed3d4425d", // Adventure
-        ];   
 
-        function generateRandomPlaylist() {
-            // get a random number between 0 and the number of links
-            var randIdx = Math.floor(Math.random() * links.length);
-            // construct the link to be opened
-            var link = links[randIdx];
-            // open it in a new window
-            window.open(link);
-        }
-    </script>
     <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Array of image sources
@@ -60,5 +42,9 @@
         document.body.style.backgroundImage = "url('" + imageSources[randomIndex] + "')";
     });
     </script>
+
+
+    
+
 </body>
 </html>
