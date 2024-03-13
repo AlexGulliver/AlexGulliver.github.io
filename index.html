@@ -19,9 +19,6 @@
             <a id="randomPlaylist" class="menutext" onclick="generateRandomPlaylist()">PLAYLIST</a>
             <a class="menutext" href="mailto:alex.gulliver6@gmail.com?subject=I'm%20such%20a%20big%20fan!">CONTACT</a>
         </div>        
-        <div class="socialmediaiconbox">
-        </div>
-
     </div>
     <script src="assets/js/script.js"></script>
     <script>
@@ -38,23 +35,21 @@
             // open it in a new window
             window.open(link);
         }
-    </script>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Array of image sources
-        var folderPath = "assets/media/backgrounds/";
-    
-        // Specify the range of filenames (e.g., from 1 to 10)
-        var startNumber = 1;
-        var endNumber = 2;
-    
-        // Generate the array of image sources
-        var imageSources = Array.from({ length: endNumber - startNumber + 1 }, (_, index) =>
-            folderPath + (startNumber + index) + ".png"
-        );
-    
-        // Get a random index from the array
-        var randomIndex = Math.floor(Math.random() * imageSources.length);
+        document.addEventListener("DOMContentLoaded", function () {
+            // Array of image sources
+            var folderPath = "assets/media/backgrounds/";
+        
+            // Specify the range of filenames (e.g., from 1 to 10)
+            var startNumber = 1;
+            var endNumber = 2;
+        
+            // Generate the array of image sources
+            var imageSources = Array.from({ length: endNumber - startNumber + 1 }, (_, index) =>
+                folderPath + (startNumber + index) + ".png"
+            );
+        
+            // Get a random index from the array
+            var randomIndex = Math.floor(Math.random() * imageSources.length);
     
         // Set the background image of the body with the randomly selected image source
         document.body.style.backgroundImage = "url('" + imageSources[randomIndex] + "')";
